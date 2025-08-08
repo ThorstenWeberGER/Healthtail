@@ -32,7 +32,7 @@ A veterinary clinic wants to improve  patient management processes by bringing m
 
 ##### Fully automated setup in GCP
 
-In this project I stretched myself by not just fulfilling business requirements, but also learning pros and cons about different approaches. From a local and manual setup to a fully automated setup in the Google Cloud Platform. Read more about it [here](xxxxxxxxxx).
+In this project I stretched myself by not just fulfilling business requirements, but also learning pros and cons about different approaches. From a local and manual setup to a fully automated setup in the Google Cloud Platform. Read more about it [here](https://github.com/ThorstenWeberGER/Healthtail/tree/main?tab=readme-ov-file#pipeline-and-automation).
 
 ## Analysis
 
@@ -128,12 +128,11 @@ For cleaning of name field and phone numbers **Regular Expressions** are a wonde
 |------------------|---------------------------|----------------------|
 | Data upload | [Google Cloud storage bucket](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/GCP_01_cloud_storage.jpg) with access rights for customer | Use personalized account of Service Account for M:M communiation. |
 | Data ingestion | Scheduled [Google Data Transfer](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/GCP_04_automated_datatransfer_check.jpg) into prepared Big Query datasets and tables. Data gets mirrored for full update. | Chance for improvement: Use of Google Cloud Functions to automatically detect new files and start workflow |
-| ETL-Pipeline | Separate scripts for cleaning and transformation on three [data layers](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/\gcp_07_tables_ready.jpg) (stage, integration, consumer). Automation via [Big Query Pipeline](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/\gcp_07_tables_ready.jpg) functionality | Manual script for [quality check](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/gcp_09_quality_control.jpg). Change for improvement: Automization with DBT |
+| ETL-Pipeline | Separate scripts for cleaning and transformation on three [data layers](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/gcp_07_tables_ready.jpg) (stage, integration, consumer). Automation via [Big Query Pipeline](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/gcp_08_pipeline_scheduler.jpg) functionality | Manual script for [quality check](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/gcp_09_quality_control.jpg). Change for improvement: Automization with DBT |
 | Visualization | [Looker Studio](https://lookerstudio.google.com/s/k1Ack_vEUV8) directly connected to Big Query with data refresh every 12 hours | Chance for improvement: Use Google Groups for better access control | 
 
-
 ### Repo structure
-
+```
 ├── Code/
 │ `Option 1: PostgreSQL`
 │   ├── var1_postgresql/ 
@@ -160,3 +159,4 @@ For cleaning of name field and phone numbers **Regular Expressions** are a wonde
 ├── .gitignore
 ├── license
 └── readme.md
+```
