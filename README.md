@@ -25,7 +25,9 @@ A veterinary clinic wants to improve  patient management processes by bringing m
 
 ##### The Product
 
-![Dashboard](Images\apex_dashboard.png)
+
+
+![Dashboard](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/apex_dashboard.png)
 [Link](https://lookerstudio.google.com/s/k1Ack_vEUV8) to online dashboard
 
 ##### Fully automated setup in GCP
@@ -82,7 +84,7 @@ The data is given in three CSV-files requiring cleaning and transformation into 
 
 | `patients.csv` | `visits.csv`           | `invoices.csv`      |  
 |------------------|---------------------------|----------------------|
-| <a href="Images\table_patients.png"><img src="Images\table_patients.png" width="80"/></a> | <a href="Images\table_visits.png"><img src="Images\table_visits.png" width="80"/></a> | <a href="Images\table_invoices.png"><img src="Images\table_invoices.png" width="80"/></a> |
+| <a href="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_patients.png"><img src="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/\table_patients.png" width="80"/></a> | <a href="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_visits.png"><img src="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_visits.png" width="80"/></a> | <a href="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_invoices.png"><img src="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_invoices.png" width="80"/></a> |
 
 
 ### Two datamodels
@@ -124,9 +126,9 @@ For cleaning of name field and phone numbers **Regular Expressions** are a wonde
 
 | Step | Solution           | Comments      |  
 |------------------|---------------------------|----------------------|
-| Data upload | [Google Cloud storage bucket](Images\GCP_01_cloud_storage.jpg) with access rights for customer | Use personalized account of Service Account for M:M communiation. |
-| Data ingestion | Scheduled [Google Data Transfer](Images\GCP_04_automated_datatransfer_check.jpg) into prepared Big Query datasets and tables. Data gets mirrored for full update. | Chance for improvement: Use of Google Cloud Functions to automatically detect new files and start workflow |
-| ETL-Pipeline | Separate scripts for cleaning and transformation on three [data layers](Images\gcp_07_tables_ready.jpg) (stage, integration, consumer). Automation via [Big Query Pipeline](Images\gcp_07_tables_ready.jpg) functionality | Manual script for [quality check](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/gcp_09_quality_control.jpg). Change for improvement: Automization with DBT |
+| Data upload | [Google Cloud storage bucket](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/\GCP_01_cloud_storage.jpg) with access rights for customer | Use personalized account of Service Account for M:M communiation. |
+| Data ingestion | Scheduled [Google Data Transfer](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/\GCP_04_automated_datatransfer_check.jpg) into prepared Big Query datasets and tables. Data gets mirrored for full update. | Chance for improvement: Use of Google Cloud Functions to automatically detect new files and start workflow |
+| ETL-Pipeline | Separate scripts for cleaning and transformation on three [data layers](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/\gcp_07_tables_ready.jpg) (stage, integration, consumer). Automation via [Big Query Pipeline](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/\gcp_07_tables_ready.jpg) functionality | Manual script for [quality check](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/gcp_09_quality_control.jpg). Change for improvement: Automization with DBT |
 | Visualization | [Looker Studio](https://lookerstudio.google.com/s/k1Ack_vEUV8) directly connected to Big Query with data refresh every 12 hours | Chance for improvement: Use Google Groups for better access control | 
 
 
