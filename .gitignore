@@ -1,6 +1,9 @@
 # json_keys
 .json
 
+# secrets folder
+secret_dont_push/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -184,3 +187,4 @@ cython_debug/
 .cursorindexingignore
 README.md
 secret_dont_push/masteschool-gcp-SA-cleaning.json
+secret_dont_push/masteschool-gcp-SA-cleaning_old.json

@@ -1,5 +1,7 @@
 # Apex Pet Health 🐾
-> Mastery project with Google Cloud Platform, BigQuery and Looker
+
+> * Pipelines, EDA, Cleaning, Data Modeling, Automation, Dashboarding
+> * PostgreSQL, Python, Google Cloud Platform, BigQuery and Looker
 
 ![logo](Images\apex_pet_health_logo.png)
 
