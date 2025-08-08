@@ -4,7 +4,7 @@
 > * KPI-dashboards, answering business questions, data storytelling
 > * PostgreSQL, Python, Google Cloud Platform, BigQuery and Looker Studio
 
-![logo](Images\apex_pet_health_logo_small.png)
+![Images\apex_pet_health_logo_small.png](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/apex_pet_health_logo_small.png)
 
 ## Project purpose 🧭
 
