@@ -33,7 +33,6 @@ A veterinary clinic wants to improve  patient management processes by bringing m
 ##### Fully automated setup in GCP
 
 In this project I stretched myself by not just fulfilling business requirements, but also learning pros and cons about different approaches. From a local and manual setup to a fully automated setup in the Google Cloud Platform. Read more about it [here](https://github.com/ThorstenWeberGER/Healthtail/tree/main?tab=readme-ov-file#pipeline-and-automation).
-
 ## Analysis
 
 The dataset represents three years 2024-2026 (yes we are in the future already) of pet patients visits, diagnosis, purchased and prescribed medications. The following insights are based on CY 2025 with 78k pet patients visits.
@@ -84,7 +83,7 @@ The data is given in three CSV-files requiring cleaning and transformation into 
 
 | `patients.csv` | `visits.csv`           | `invoices.csv`      |  
 |------------------|---------------------------|----------------------|
-| <a href="Images/table_patients.png"><img src="Images/\table_patients.png" width="80"/></a> | <a href="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_visits.png"><img src="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_visits.png" width="80"/></a> | <a href="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_invoices.png"><img src="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_invoices.png" width="80"/></a> |
+| <a href="Images/table_patients.png"><img src="Images/\table_patients.png" width="80"/></a> | <a href="Images/table_visits.png"><img src="Images/table_visits.png" width="80"/></a> | <a href="Images/table_invoices.png"><img src="Images/table_invoices.png" width="80"/></a> |
 
 
 ### Two datamodels
