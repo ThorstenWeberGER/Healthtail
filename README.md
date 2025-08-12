@@ -4,7 +4,7 @@
 > * KPI-dashboards, answering business questions, data storytelling
 > * PostgreSQL, Python, Google Cloud Platform, BigQuery and Looker Studio
 
-![Images\apex_pet_health_logo_small.png](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/apex_pet_health_logo_small.png)
+![Images\apex_pet_health_logo_small.png](Images/apex_pet_health_logo_small.png)
 
 ## Project purpose 🧭
 
@@ -25,13 +25,12 @@ A veterinary clinic wants to improve  patient management processes by bringing m
 
 ##### The Product
 
-![Dashboard](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/apex_dashboard.png)
+![Dashboard](Images/apex_dashboard.png)
 [Link](https://lookerstudio.google.com/s/k1Ack_vEUV8) to online dashboard
 
 ##### Fully automated setup in GCP
 
 In this project I stretched myself by not just fulfilling business requirements, but also learning pros and cons about different approaches. From a local and manual setup to a fully automated setup in the Google Cloud Platform. Read more about it [here](https://github.com/ThorstenWeberGER/Healthtail/tree/main?tab=readme-ov-file#pipeline-and-automation).
-
 ## Analysis
 
 The dataset represents three years 2024-2026 (yes we are in the future already) of pet patients visits, diagnosis, purchased and prescribed medications. The following insights are based on CY 2025 with 78k pet patients visits.
@@ -82,7 +81,7 @@ The data is given in three CSV-files requiring cleaning and transformation into 
 
 | `patients.csv` | `visits.csv`           | `invoices.csv`      |  
 |------------------|---------------------------|----------------------|
-| <a href="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_patients.png"><img src="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/\table_patients.png" width="80"/></a> | <a href="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_visits.png"><img src="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_visits.png" width="80"/></a> | <a href="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_invoices.png"><img src="https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/table_invoices.png" width="80"/></a> |
+| <a href="Images/table_patients.png"><img src="Images/\table_patients.png" width="80"/></a> | <a href="Images/table_visits.png"><img src="Images/table_visits.png" width="80"/></a> | <a href="Images/table_invoices.png"><img src="Images/table_invoices.png" width="80"/></a> |
 
 
 ### Two datamodels
@@ -93,7 +92,7 @@ As the business questions were adressing `two domains`, costs of medication and 
 
 ### Cleaning requirements
 
-Initial quality check showed minor [anomalies](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/GCP_05_data_anomalies.jpg) which can be cleaned at ease.
+Initial quality check showed minor [anomalies](Images/GCP_05_data_anomalies.jpg) which can be cleaned at ease.
 
 * ``Name fields`` including all trouble (Prefix, suffix, lower-/upper case confusion, firstname, lastname all in one cell)
 * ``Inconsistencies`` in upper lower case for string columns
@@ -124,9 +123,9 @@ For cleaning of name field and phone numbers **Regular Expressions** are a wonde
 
 | Step | Solution           | Comments      |  
 |------------------|---------------------------|----------------------|
-| Data upload | [Google Cloud storage bucket](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/GCP_01_cloud_storage.jpg) with access rights for customer | Use personalized account of Service Account for M:M communiation. |
-| Data ingestion | Scheduled [Google Data Transfer](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/GCP_04_automated_datatransfer_check.jpg) into prepared Big Query datasets and tables. Data gets mirrored for full update. | Chance for improvement: Use of Google Cloud Functions to automatically detect new files and start workflow |
-| ETL-Pipeline | Separate scripts for cleaning and transformation on three [data layers](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/gcp_07_tables_ready.jpg) (stage, integration, consumer). Automation via [Big Query Pipeline](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/gcp_08_pipeline_scheduler.jpg) functionality | Manual script for [quality check](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/gcp_09_quality_control.jpg). Change for improvement: Automization with DBT |
+| Data upload | [Google Cloud storage bucket](Images/GCP_01_cloud_storage.jpg) with access rights for customer | Use personalized account of Service Account for M:M communiation. |
+| Data ingestion | Scheduled [Google Data Transfer](Images/GCP_04_automated_datatransfer_check.jpg) into prepared Big Query datasets and tables. Data gets mirrored for full update. | Chance for improvement: Use of Google Cloud Functions to automatically detect new files and start workflow |
+| ETL-Pipeline | Separate scripts for cleaning and transformation on three [data layers](Images/gcp_07_tables_ready.jpg) (stage, integration, consumer). Automation via [Big Query Pipeline](Images/gcp_08_pipeline_scheduler.jpg) functionality | Manual script for [quality check](Images/gcp_09_quality_control.jpg). Change for improvement: Automization with DBT |
 | Visualization | [Looker Studio](https://lookerstudio.google.com/s/k1Ack_vEUV8) directly connected to Big Query with data refresh every 12 hours | Chance for improvement: Use Google Groups for better access control | 
 
 ### Repo structure
