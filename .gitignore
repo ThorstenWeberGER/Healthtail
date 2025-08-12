@@ -188,3 +188,4 @@ cython_debug/
 README.md
 secret_dont_push/masteschool-gcp-SA-cleaning.json
 secret_dont_push/masteschool-gcp-SA-cleaning_old.json
+Healthtail.code-workspace

@@ -25,8 +25,6 @@ A veterinary clinic wants to improve  patient management processes by bringing m
 
 ##### The Product
 
-
-
 ![Dashboard](https://github.com/ThorstenWeberGER/Healthtail/blob/4fedd0e9020feacfe9ad9830531747b64a882652/Images/apex_dashboard.png)
 [Link](https://lookerstudio.google.com/s/k1Ack_vEUV8) to online dashboard
 
