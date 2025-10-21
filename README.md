@@ -30,7 +30,7 @@ This project's real value was stretching beyond the requirements to learn the pr
 
 > **Key takeaway**: GCP allows for seamless tool integration, enabling a truly automated, enterprise-ready data delivery process.
 
-## 🛠️ Technical Achievements
+## Technical Achievements
 
 * **Full Automation**: Implemented a 100% automated ETL pipeline on GCP (replacing manual, local setups) using Data Transfer form Cloud Storage into BigQuery and scheduled pipelines.
 
@@ -38,7 +38,7 @@ This project's real value was stretching beyond the requirements to learn the pr
 
 * **Data Modeling**: Designed two distinct BigQuery data models to optimize performance for specific business domains (Medication Inventory/Costs and Patient Diagnosis Trends).
 
-## 📈 Business Value & Actionable Insights
+## Business Value & Actionable Insights
 
 The analysis and visualization in Looker delivered immediate, high-impact findings for executive leadership.
 
