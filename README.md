@@ -2,13 +2,13 @@
 
 ![Images\apex_pet_health_logo_small.png](Images/apex_pet_health_logo_small.png)
 
-## Project purpose 🧭
+## Project purpose
 
 Delighted to share my latest project — an end-to-end Analytics Engineering solution for a veterinary clinic focused on optimizing patient management and financial health. The core challenge: move from manual, inefficient data handling to real-time insights and full automation.
 
 I designed and deployed a **production-ready ETL-pipeline** using the **Google Cloud Platform** (GCP), demonstrating how modern tooling can turn raw data into fast, high-impact decisions.
 
-### ⚙️ Tech Stack 
+## Tech Stack 
 
 * **Cloud Platform**: Google Cloud Platform (GCP) ☁️ (Automation, Service Accounts, Data Transfer).
 
@@ -18,7 +18,7 @@ I designed and deployed a **production-ready ETL-pipeline** using the **Google C
 
 * **Foundational Tech**: SQL, Python, PostgreSQL, Git.
 
-### 🧠 The Learning Journey: From Manual Setup to Enterprise Automation
+## The Learning Journey: From Manual Setup to Enterprise Automation
 
 This project's real value was stretching beyond the requirements to learn the pros and cons of different approaches. I conducted a **comparative analysis of three pipeline architectures** to understand efficiency and readiness:
 
@@ -30,15 +30,15 @@ This project's real value was stretching beyond the requirements to learn the pr
 
 > **Key takeaway**: GCP allows for seamless tool integration, enabling a truly automated, enterprise-ready data delivery process.
 
-### 🛠️ Technical Deep Dive
+## 🛠️ Technical Achievements
 
-* **Full Automation**: Implemented a 100% automated ETL pipeline on GCP (replacing manual, local setups) using Scheduled Data Transfer into BigQuery.
+* **Full Automation**: Implemented a 100% automated ETL pipeline on GCP (replacing manual, local setups) using Data Transfer form Cloud Storage into BigQuery and scheduled pipelines.
 
 * **Advanced Data Cleaning**: Used SQL Regular Expressions (RegEx) to rigorously clean and standardize messy source fields (e.g., owner names, phone numbers) ensuring high data quality.
 
 * **Data Modeling**: Designed two distinct BigQuery data models to optimize performance for specific business domains (Medication Inventory/Costs and Patient Diagnosis Trends).
 
-### 📈 Business Value & Actionable Insights
+## 📈 Business Value & Actionable Insights
 
 The analysis and visualization in Looker delivered immediate, high-impact findings for executive leadership.
 
