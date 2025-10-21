@@ -1,79 +1,64 @@
-# Apex Pet Health 🐾
-
-> * Pipelines, EDA, Cleaning, Data Modeling, Automation
-> * KPI-dashboards, answering business questions, data storytelling
-> * PostgreSQL, Python, Google Cloud Platform, BigQuery and Looker Studio
+# 🚀 Apex Pet Health: Building a Fully Automated, E2E Analytics Pipeline on Google Cloud ☁️
 
 ![Images\apex_pet_health_logo_small.png](Images/apex_pet_health_logo_small.png)
 
 ## Project purpose 🧭
 
-A veterinary clinic wants to improve  patient management processes by bringing most used data into a cloud platform and using real-time dashboard information to make decisions better and quicker. 
+Delighted to share my latest project — an end-to-end Analytics Engineering solution for a veterinary clinic focused on optimizing patient management and financial health. The core challenge: move from manual, inefficient data handling to real-time insights and full automation.
 
-##### Key requirements
-1. `Auditing Medication Purchases and Expenses`: They need a way to easily track and analyze their annual medication spending.
-2. `Monitoring Diagnoses and Disease Trends`: They want to identify common diagnoses and diseases segmented by pet type and breed. This information will help them plan staffing needs and optimize medication procurement.
+I designed and deployed a **production-ready ETL-pipeline** using the **Google Cloud Platform** (GCP), demonstrating how modern tooling can turn raw data into fast, high-impact decisions.
 
-##### Tasks and Deliverables
+### ⚙️ Tech Stack 
 
-* `Looker Studio Report` designed
-* `Data Ingestion` set up and automated 
-* `Cleaning and transformation` of data 
-* `Data models` designed and implemented in BigQuery 
-* `ETL Pipelines` (clean, transform) production ready
-* `Live presentation` to clinic directors
+* **Cloud Platform**: Google Cloud Platform (GCP) ☁️ (Automation, Service Accounts, Data Transfer).
 
-##### The Product
+* **Data Warehouse**: BigQuery (Used for high-speed storage, cleaning, transformation, and direct BI connection).
 
-![Dashboard](Images/apex_dashboard.png)
-[Link](https://lookerstudio.google.com/s/k1Ack_vEUV8) to online dashboard
+* **Visualization**: Looker Studio (For creating interactive KPI dashboards and data storytelling).
 
-##### Fully automated setup in GCP
+* **Foundational Tech**: SQL, Python, PostgreSQL, Git.
 
-In this project I stretched myself by not just fulfilling business requirements, but also learning pros and cons about different approaches. From a local and manual setup to a fully automated setup in the Google Cloud Platform. Read more about it [here](https://github.com/ThorstenWeberGER/Healthtail/tree/main?tab=readme-ov-file#pipeline-and-automation).
-## Analysis
+### 🧠 The Learning Journey: From Manual Setup to Enterprise Automation
 
-The dataset represents three years 2024-2026 (yes we are in the future already) of pet patients visits, diagnosis, purchased and prescribed medications. The following insights are based on CY 2025 with 78k pet patients visits.
+This project's real value was stretching beyond the requirements to learn the pros and cons of different approaches. I conducted a **comparative analysis of three pipeline architectures** to understand efficiency and readiness:
 
-##### Key insights regarding diagnosis
+1. **Local/Manual ⭐**: Pure PostgreSQL setup for all tasks—100% manual and inefficient.
 
-* **Top two diagnosis** are **Hypertrophic** Cardiomyopathy (Hcm) with 5.4k cases and **Hip Dysplasia** with 4k cases in CY 2025
-* Data suggests, **that age has an significant effect on diagnosis**. Deeper analysis required as some diagnosis should happen more often with older patients. I suggest to analyse diagnosis in relation to different lifetime expectations. 
-* **Highest average meds cost for cancer**: Although Hyptertophic is the most commong diagnosis, Cancer leads in incurred medications costs with costs of 322k € in total for all pet owners. This is due to high costs per visit of 125€ on average.  
+2. **Pythonic ⭐⭐**: Local storage, Python cleaning/modeling, BigQuery ingestion via API—partially automated.
 
-##### Key insights regarding business performance
+3. **Google Cloud ⭐⭐⭐** (Final Delivery): Fully automated E2E pipeline using GCP Services (Storage, Data Transfer, BigQuery Pipeline functions) for a highly efficient, production-ready solution.
 
-* **Declining visits in 2025** In 2024 our business was increasing with a peak at end of 2024 - bad news is that in 2025 we see a strong decrease in visits over the year.
-* **We're building inventory and tying up too much capital as a result.** Our doctors only prescribe meds in value of 1,3M € this year whereas we purchased meds of 2,1M € value
-* **Upside potential** We treat mainly cats, dogs and hamsters. We should investigate in diversifying.
+> **Key takeaway**: GCP allows for seamless tool integration, enabling a truly automated, enterprise-ready data delivery process.
 
-**Further Recommendations**
-* **Increase data quality** by advising frontdesk to clearly enter data for breed and we should implement separate fields in our data entry form for sex of owner and names titles. Direct marketing activities will benefit. 
-* **Automated warnings for low stock** levels could be implemented - for this we need an inventory count once a year
+### 🛠️ Technical Deep Dive
 
-## Skills built 🚀
+* **Full Automation**: Implemented a 100% automated ETL pipeline on GCP (replacing manual, local setups) using Scheduled Data Transfer into BigQuery.
 
-This project showed to be really exciting. A end-2-end project which I could apply my skills on and additionally grow by learning how to use **Google Cloud Platform** to built **fully automated ETL-pipelines** and finally answer business questions with Looker Reports.
+* **Advanced Data Cleaning**: Used SQL Regular Expressions (RegEx) to rigorously clean and standardize messy source fields (e.g., owner names, phone numbers) ensuring high data quality.
 
-* **Data Handling & Processing**: SQL, data cleaning, automate ETL-pipelines including data ingestation, building appropriate data models, automation of processes
-* **Data Visualization**: Designing dashboards with clarity and interactivity, storytelling with data
-* **Business & Domain Understanding**: Translation business questions into data solutions, understanding KPIs and metrics, connecting data insights to decision-making
-* **Communication**: Clear reporting for non-technical stakeholders, presentations and executive summaries 
-* **Tech stack**: GCP, BigQuery, Data Transfer, Data Transfer, APIs, Service Accounts, SQL, Python, Looker Studio, PostgreSQL, Git
+* **Data Modeling**: Designed two distinct BigQuery data models to optimize performance for specific business domains (Medication Inventory/Costs and Patient Diagnosis Trends).
+
+### 📈 Business Value & Actionable Insights
+
+The analysis and visualization in Looker delivered immediate, high-impact findings for executive leadership.
+
+![Dashboard](Images/apex_dashboard.png)[Link](https://lookerstudio.google.com/s/k1Ack_vEUV8) to online dashboard
+
+* **Financial Waste**: Identified a significant *inventory issue*, revealing the clinic purchased €2.1M in medications while only prescribing €1.3M, tying up substantial capital.
+
+* **Key Disease Trends**: Confirmed Hypertrophic Cardiomyopathy and Hip Dysplasia as top diagnoses, but uncovered that Cancer treatments led in average cost per patient (€125/visit), informing pricing and inventory needs.
+
+* **Performance Drop**: The dashboard revealed a *strong decrease in patient visits*, triggering immediate recommendations for business investigation and intervention.
+
+* **Upside potential**: We treat mainly cats, dogs and hamsters. We should investigate in diversifying.
+
+This project validates my ability to build end-to-end data products, manage cloud-native resources, and communicate data insights effectively to drive core business decisions. Ready for the next challenge! 🚀
 
 
-## Looking under the hood ⚡
+# Looking under the hood ⚡
 
-### One project three possible approaches
+The following is targeted at the technically interested reader.
 
-**How and why?** I started off easy with utilizing *only PostgreSQL* database for all tasks of loading, transforming, cleaning and model building. But this did not satisfy me. Because it is *not efficient*. You need to handel different tools which are not connected. And all jobs are manually, not scheduled. Thus I started digging deeper.... 
-
-Finally I decided on **three approaches** for learning and comparison:
-| PostgreSQL <br> ⭐ | Pythonic <br> ⭐⭐ | Google Cloud way <br> ⭐⭐⭐ |
-|----------|----------|----------|
-| - fully local setup <br> - pure SQL <br> - 100% manual <br> - Tableau not connected | - local storage<br> - Cleaning & modeling with Python <br> - Data Ingestion to BigQuery via API<br> - Partly automized | - Fully automated ETL-pipeline<br>- Stage, Integration, Consumer layer<br> - Cleaning and transformation with SQL triggered via Pipeline<br> - Tableau Looker Report directly connected to BigQuery
-
-**My key takeways**: The Google Cloud Platform allowed an amazing integration of tools required the final delivery of the dashboard based on raw data, allowing a fully automated end-two-end process across various tools. `Highly efficient and production ready for enterprise implementation`.
 
 ### The data
 
